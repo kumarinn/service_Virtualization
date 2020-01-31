@@ -23,7 +23,7 @@ pipeline {
  stage(‘Provision infrastructure’) {
  
  steps {
- dir(‘C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64’)
+ dir(‘F:\SV_PetClinic\Terraform\terraform_0.12.20_windows_amd64’)
  {
  bat '''terraform init
 '''
