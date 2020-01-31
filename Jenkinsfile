@@ -2,13 +2,6 @@ pipeline {
  agent any
  
  stages {
- stage(‘checkout’) {
- steps {
- git 'https://github.com/kumarinn/jira-jenkins-shared-lib.git'
- 
- }
- }
- 
  
  stage(‘Provision infrastructure’) {
  
