@@ -25,10 +25,13 @@ pipeline {
  steps {
  dir(‘C:\Users\kumarnn\Desktop\Terraform\terraform_0.12.20_windows_amd64’)
  {
- sh ‘terraform init’
- sh ‘terraform plan -out=plan’
+ bat '''terraform init
+'''
+ bat '''terraform plan -out=plan
+'''
  // sh ‘terraform destroy -auto-approve’
- sh ‘terraform apply plan’
+ bat '''terraform apply plan
+'''
  }
  
  
